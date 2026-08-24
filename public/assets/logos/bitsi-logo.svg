@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <rect width="256" height="256" rx="56" fill="#2743F5"/>
+  <text x="52" y="168" font-family="monospace" font-size="96" font-weight="bold" fill="#FAFBFE">b_</text>
+  <rect x="176" y="140" width="24" height="28" fill="#FAFBFE">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>

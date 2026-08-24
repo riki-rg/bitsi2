@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <circle cx="128" cy="128" r="104" stroke="#0F1B33" stroke-width="10"/>
+  <g stroke="#2743F5" stroke-width="8" stroke-linecap="round">
+    <path d="M128 40v-20M128 236v-20M216 128h20M20 128h20M191 65l15-15M50 206l15-15M191 191l15 15M50 50l15 15"/>
+  </g>
+  <circle cx="128" cy="128" r="58" fill="#2743F5"/>
+  <text x="128" y="146" text-anchor="middle" font-family="serif" font-size="44" font-weight="bold" fill="#FAFBFE">UMK</text>
+</svg>

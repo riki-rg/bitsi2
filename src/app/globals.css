@@ -1,26 +1,174 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --radius: 0.75rem;
+
+  /* Engineering Blueprint — light theme, cobalt accent */
+  --paper: #fafbfe;
+  --mist: #eef2fa;
+  --ink: #0f1b33;
+  --fog: #5a6478;
+  --line: rgba(15, 27, 51, 0.12);
+  --cobalt: #2743f5;
+  --cobalt-deep: #1c31c9;
+  --sky: #dbe7ff;
+  --pulse: #ff6b35;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-ink: var(--ink);
+  --color-fog: var(--fog);
+  --color-line: var(--line);
+  --color-cobalt: var(--cobalt);
+  --color-cobalt-deep: var(--cobalt-deep);
+  --color-sky: var(--sky);
+  --color-pulse: var(--pulse);
+
+  /* shadcn compatibility tokens */
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --color-card: #ffffff;
+  --color-card-foreground: var(--ink);
+  --color-popover: #ffffff;
+  --color-popover-foreground: var(--ink);
+  --color-primary: var(--cobalt);
+  --color-primary-foreground: var(--paper);
+  --color-secondary: var(--mist);
+  --color-secondary-foreground: var(--ink);
+  --color-muted: var(--mist);
+  --color-muted-foreground: var(--fog);
+  --color-accent: var(--sky);
+  --color-accent-foreground: var(--ink);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--cobalt);
+
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-display: var(--font-bricolage), ui-sans-serif, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-line outline-cobalt/40;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--cobalt);
+    color: var(--paper);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Blueprint grid background ─────────────────────────────────────────── */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, rgba(39, 67, 245, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39, 67, 245, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(
+    ellipse 90% 80% at 50% 20%,
+    black 40%,
+    transparent 100%
+  );
+}
+
+.dot-grid {
+  background-image: radial-gradient(
+    rgba(250, 251, 254, 0.28) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+/* ── Keyframes ─────────────────────────────────────────────────────────── */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.55);
+  }
+  50% {
+    opacity: 0.75;
+    box-shadow: 0 0 0 6px rgba(255, 107, 53, 0);
+  }
+}
+
+.animate-rise {
+  opacity: 0;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-paused:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+.edge-flow {
+  stroke-dasharray: 6 8;
+  animation: dash-flow 1.6s linear infinite;
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-marquee,
+  .edge-flow,
+  .pulse-dot {
+    animation: none;
+  }
+  .animate-rise {
+    opacity: 1;
+  }
 }

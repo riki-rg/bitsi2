@@ -21,12 +21,12 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-[1.15fr_1fr]">
         <div>
-          <p className="animate-rise border-line text-cobalt inline-flex items-center gap-2 rounded-full border bg-white/70 px-4 py-1.5 font-mono text-xs tracking-widest backdrop-blur-sm">
+          <p className="animate-rise border-line text-cobalt inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-2xl border bg-white/70 px-4 py-1.5 font-mono text-xs tracking-widest backdrop-blur-sm">
             <span
               aria-hidden
-              className="pulse-dot bg-pulse h-1.5 w-1.5 rounded-full"
+              className="pulse-dot bg-pulse h-1.5 w-1.5 shrink-0 rounded-full"
             />
-            KOMUNITAS TEKNOLOGI · HIMSI UM KUDUS
+            KOMUNITAS TEKNOLOGI · HIMSI UNIVERSITAS MUHAMMADIYAH KUDUS
           </p>
 
           <h1 className="font-display mt-7 text-5xl leading-[1.02] font-bold tracking-tight text-balance sm:text-6xl lg:text-7xl">
@@ -42,13 +42,9 @@ export function Hero() {
           </h1>
 
           <p className="animate-rise text-fog mt-7 max-w-xl leading-relaxed [animation-delay:480ms] sm:text-lg">
-            <strong className="text-ink font-semibold">BitSI</strong> — Bit of
-            Sistem Informasi — rumah bagi mahasiswa yang mau terjun langsung ke
-            empat bidang inti teknologi:{" "}
-            <em className="text-ink not-italic">web development</em>,{" "}
-            <em className="text-ink not-italic">jaringan</em>,{" "}
-            <em className="text-ink not-italic">IoT</em>, dan{" "}
-            <em className="text-ink not-italic">server</em>.
+            BitSI (Bit of Sistem Informasi) itu komunitas mahasiswa Sistem
+            Informasi Universitas Muhammadiyah Kudus yang suka ngoprek: bikin
+            web, utak-atik jaringan, rakit IoT, sampai ngatur server.
           </p>
 
           <div className="animate-rise mt-9 flex flex-wrap items-center gap-4 [animation-delay:600ms]">

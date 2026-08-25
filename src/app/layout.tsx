@@ -27,11 +27,11 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "BitSI — Komunitas Teknologi HIMSI UM Kudus",
+    default: "BitSI · Komunitas Teknologi HIMSI Universitas Muhammadiyah Kudus",
     template: "%s | BitSI",
   },
   description:
-    "BitSI (Bit of Sistem Informasi) — komunitas teknologi mahasiswa di bawah HIMSI Universitas Muhammadiyah Kudus yang bergerak di bidang web development, jaringan, IoT, dan server.",
+    "Komunitas mahasiswa Sistem Informasi Universitas Muhammadiyah Kudus yang belajar lewat praktik: bikin web, atur jaringan, rakit IoT, dan kelola server.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

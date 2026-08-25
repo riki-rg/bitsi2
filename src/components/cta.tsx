@@ -1,4 +1,4 @@
-import { AtSign, Mail, MessageCircle } from "lucide-react";
+import { AtSign, ClipboardList, Mail, MessageCircle } from "lucide-react";
 import { site } from "@/lib/site";
 import { Reveal } from "@/components/reveal";
 
@@ -16,39 +16,47 @@ export function Cta() {
 
             <div className="relative">
               <p className="text-sky font-mono text-xs tracking-[0.3em] uppercase">
-                Open Recruitment
+                Rekrutmen Anggota Baru
               </p>
               <h2 className="font-display mx-auto mt-5 max-w-2xl text-3xl font-semibold tracking-tight text-balance sm:text-4xl lg:text-5xl">
-                Siap jadi satu bit dari BitSI?
+                Mau gabung ke BitSI?
               </h2>
               <p className="text-paper/80 mx-auto mt-5 max-w-xl leading-relaxed">
-                Tidak perlu jago sekarang — cukup bawa rasa penasaran. Sisanya
-                kita bangun bersama, satu bit demi satu bit.
+                Gapapa kalau masih nol pengalaman. Daftar lewat Google Form,
+                nanti info selanjutnya diinfokan lewat grup WhatsApp.
               </p>
 
               <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
                 <a
-                  href={site.sosial.whatsapp}
+                  href={site.sosial.googleForm}
                   className="text-cobalt inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium transition-transform duration-300 hover:-translate-y-0.5"
                 >
-                  <MessageCircle size={16} />
-                  Daftar via WhatsApp
+                  <ClipboardList size={16} />
+                  Daftar Lewat Google Form
                 </a>
                 <a
-                  href={site.sosial.instagram}
+                  href={site.sosial.whatsapp}
                   className="inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-3.5 text-sm font-medium text-white transition-colors hover:border-white hover:bg-white/10"
                 >
-                  <AtSign size={16} />
-                  DM Instagram
+                  <MessageCircle size={16} />
+                  Tanya via WhatsApp
                 </a>
               </div>
 
-              <p className="text-paper/70 mt-7 flex items-center justify-center gap-2 font-mono text-xs">
+              <a
+                href={site.sosial.instagramHimsi}
+                className="text-paper/70 hover:text-paper mt-6 inline-flex items-center gap-1.5 font-mono text-xs transition-colors"
+              >
+                <AtSign size={13} />
+                atau DM Instagram HIMSI
+              </a>
+
+              <p className="text-paper/70 mt-5 flex items-center justify-center gap-2 font-mono text-xs">
                 <span
                   aria-hidden
                   className="pulse-dot bg-pulse h-1.5 w-1.5 rounded-full"
                 />
-                pendaftaran anggota baru dibuka setiap awal semester
+                pendaftaran dibuka tiap awal semester
               </p>
             </div>
           </div>
@@ -68,8 +76,8 @@ export function Footer() {
               bit<span className="text-cobalt">si</span>
             </p>
             <p className="text-fog mt-3 max-w-sm text-sm leading-relaxed">
-              {site.fullName} — komunitas teknologi mahasiswa di bawah naungan
-              Himpunan Mahasiswa Sistem Informasi, Universitas Muhammadiyah
+              {site.fullName}, komunitas teknologi mahasiswa Sistem Informasi di
+              bawah Himpunan Mahasiswa Sistem Informasi Universitas Muhammadiyah
               Kudus.
             </p>
             <a
@@ -126,7 +134,7 @@ export function Footer() {
             Kudus
           </p>
           <p className="text-fog font-mono text-xs">
-            dibangun oleh anggota, untuk anggota
+            dibuat sama anggotanya sendiri
           </p>
         </div>
       </div>

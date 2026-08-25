@@ -21,14 +21,15 @@ export function Bidang() {
         <div className="mt-12 flex flex-wrap items-end justify-between gap-6">
           <Reveal delay={80}>
             <h2 className="font-display max-w-xl text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-              Pilih jalurmu,{" "}
-              <span className="text-cobalt">kuasai lewat karya.</span>
+              Empat bidang.{" "}
+              <span className="text-cobalt">
+                Tinggal pilih mau mulai dari mana.
+              </span>
             </h2>
           </Reveal>
           <Reveal delay={160}>
             <p className="text-fog max-w-sm text-sm leading-relaxed">
-              Empat bidang inti yang saling terhubung — anggota bebas
-              mengeksplorasi satu atau semuanya.
+              Anggota bebas fokus ke satu bidang atau nyobain semuanya.
             </p>
           </Reveal>
         </div>

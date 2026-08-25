@@ -50,6 +50,10 @@ docker-compose.yml   # Deploy ke VM HIMA, port 3000
 - ESLint flat config (`eslint.config.mjs`), prettier rule dipakai via `eslint-config-prettier`
 - Komponen shadcn ditambahkan via: `npx shadcn@latest add <component>`
 - Unit test colocated: `*.test.tsx` di samping komponen; e2e di folder `e2e/`
+- **Gaya copywriting:** bahasa Indonesia semi-kasual khas org mahasiswa (kamu,
+  gapapa, bareng). Hindari pola AI: em dash, rule of three, "tidak hanya X
+  tapi Y", puitis kosong. Referensi pola:
+  `~/.gemini/config/skills/anti-ai-detection/`
 
 ## Deploy ke VM HIMA
 
@@ -78,6 +82,11 @@ Semua path asset terpusat di `src/lib/site.ts`.
 `site.logos` (mis. `um-logo.png`). Nama file placeholder: `bitsi-logo.svg`,
 `himsi-logo.svg`, `um-logo.svg`. Logo tampil di navbar, strip "naungan"
 (section Tentang), dan dipakai sebagai favicon kandidat.
+
+**Favicon/tab icon:** ada di `src/app/icon.svg` (konvensi App Router, otomatis).
+Kalau logo BitSI asli sudah ada, copy juga ke file ini supaya tab icon ikut
+berubah. Browser agresif cache favicon — hard refresh (Ctrl+Shift+R) kalau
+masih muncul yang lama.
 
 **Tambah foto galeri:** taruh foto di `public/assets/gallery/` lalu tambah
 entri `{ file, caption }` di `site.galeri`. Placeholder: `foto-01..06.svg`.

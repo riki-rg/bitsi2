@@ -7,7 +7,7 @@ const naungan = [
   {
     src: site.logos.um,
     alt: "Universitas Muhammadiyah Kudus",
-    label: "UM Kudus",
+    label: "Universitas Muhammadiyah Kudus",
   },
   {
     src: site.logos.himsi,
@@ -28,21 +28,20 @@ export function About() {
         <div className="mt-12 grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:gap-20">
           <Reveal delay={100}>
             <h2 className="font-display text-3xl leading-snug font-semibold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]">
-              Satu komunitas,{" "}
-              <span className="text-cobalt">empat jalur teknologi</span>, satu
-              tujuan: tumbuh lewat praktik.
+              Satu wadah buat mahasiswa SI yang mau{" "}
+              <span className="text-cobalt">langsung praktik</span>.
             </h2>
             <p className="text-fog mt-7 max-w-2xl leading-relaxed">
-              BitSI (Bit of Sistem Informasi) adalah komunitas mahasiswa di
-              bawah naungan HIMSI Universitas Muhammadiyah Kudus. Kami percaya
-              cara terbaik menguasai teknologi bukan membaca teori saja — tapi
-              membangun, menyambungkan, dan menjalankannya sungguhan.
+              BitSI berdiri di bawah HIMSI Universitas Muhammadiyah Kudus.
+              Kegiatannya mayoritas praktik: bikin proyek bareng, ikut workshop,
+              sampai maintain server himpunan sendiri. Teori tetap dibahas, tapi
+              langsung dipakai.
             </p>
             <ul className="mt-8 flex flex-wrap gap-2.5">
               {[
-                "belajar dengan praktik",
+                "belajar sambil bikin",
                 "open source",
-                "kolaborasi lintas bidang",
+                "bareng senior & junior",
               ].map((chip) => (
                 <li
                   key={chip}

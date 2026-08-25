@@ -26,8 +26,8 @@ export function Aktivitas() {
 
         <Reveal delay={80}>
           <h2 className="font-display mt-12 max-w-xl text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-            Belajar itu rutinitas,{" "}
-            <span className="text-cobalt">bukan acara.</span>
+            Ini yang kami kerjakan{" "}
+            <span className="text-cobalt">sepanjang semester.</span>
           </h2>
         </Reveal>
 

@@ -107,12 +107,12 @@ export function Galeri() {
               Galeri
             </p>
             <h2 className="font-display mt-6 max-w-xl text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-              Momen yang{" "}
-              <span className="text-cobalt">kami dokumentasikan.</span>
+              Dokumentasi <span className="text-cobalt">kegiatan kami.</span>
             </h2>
           </div>
           <p className="text-fog max-w-sm text-sm leading-relaxed">
-            Setiap kegiatan adalah satu bit cerita. Klik foto untuk memperbesar.
+            Beberapa momen selama kegiatan. Klik fotonya kalau mau lihat lebih
+            besar.
           </p>
         </div>
 

@@ -94,7 +94,8 @@ export const site = {
     },
   ],
   sosial: {
-    googleForm: "#",
+    googleForm:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfM5ZaTzXKFeFXNr_Cz9dj1MBdicgYnhU9jJbLUvyThtuyVYA/viewform?usp=send_form",
     whatsapp:
       "https://wa.me/6285702552125?text=Permisi%20kak%20Fajar.%20Saya%20berminat%20untuk%20cari%20tahu%20lebih%20lanjut%20mengenai%20BitSI%2C%20boleh%20bantu%20jelaskan%20detailnya%3F",
     instagramHimsi:

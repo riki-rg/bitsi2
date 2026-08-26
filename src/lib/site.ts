@@ -20,14 +20,14 @@ export const site = {
       id: "web",
       index: "01",
       title: "Web Development",
-      desc: "Bikin website dan aplikasi web beneran, dari tampilan sampai API-nya. Tools yang dipakai sama dengan yang dipakai di industri.",
+      desc: "Membuat website dan aplikasi web beneran, dari tampilan sampai API-nya. Tools yang dipakai sama dengan yang dipakai di industri.",
       tags: ["frontend", "backend", "fullstack"],
     },
     {
       id: "jaringan",
       index: "02",
       title: "Jaringan",
-      desc: "Setting router, subnetting, dan ngerti gimana data berpindah antar perangkat. Termasuk dasar-dasar pengamanannya.",
+      desc: "Setting router, subnetting, dan mengerti gimana data berpindah antar perangkat. Termasuk dasar-dasar pengamanannya.",
       tags: ["routing", "konfigurasi", "keamanan"],
     },
     {
@@ -41,7 +41,7 @@ export const site = {
       id: "server",
       index: "04",
       title: "Server & DevOps",
-      desc: "Kelola VM himpunan sendiri: administrasi Linux, deploy aplikasi, dan belajar Docker di server yang benar-benar jalan.",
+      desc: "Praktek mengelola VM himpunan sendiri: administrasi Linux, deploy aplikasi, dan belajar Docker di server yang benar-benar jalan.",
       tags: ["linux", "docker", "deployment"],
     },
   ],
@@ -69,27 +69,27 @@ export const site = {
   ],
   galeri: [
     {
-      file: "/assets/gallery/foto-01.svg",
+      file: "/assets/gallery/foto-01.jpg",
       caption: "Workshop web bareng anggota baru",
     },
     {
-      file: "/assets/gallery/foto-02.svg",
+      file: "/assets/gallery/foto-02.jpg",
       caption: "Praktik konfigurasi jaringan di lab",
     },
     {
-      file: "/assets/gallery/foto-03.svg",
+      file: "/assets/gallery/foto-03.jpg",
       caption: "Rakit alat IoT dari awal",
     },
     {
-      file: "/assets/gallery/foto-04.svg",
-      caption: "Ngurus server di VM himpunan",
+      file: "/assets/gallery/foto-04.jpg",
+      caption: "Mengelola server di VM himpunan",
     },
     {
-      file: "/assets/gallery/foto-05.svg",
+      file: "/assets/gallery/foto-05.JPG",
       caption: "Sharing session bareng alumni",
     },
     {
-      file: "/assets/gallery/foto-06.svg",
+      file: "/assets/gallery/foto-06.jpeg",
       caption: "Hasil proyek IoT anggota BitSI",
     },
   ],
